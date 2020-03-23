@@ -40,33 +40,33 @@
   修改过程：将图上左下角“ PermitRootLogin "的那行改为“ PermitRootLogin yes ”
   上传：
   pscp D:\VTShare\ubuntu-18.04.4-server-amd64.iso root@192.168.254.3"/home/ann/  
-<br/>
+
 * ##### 6. 挂载iso镜像到loopdir目录下  
   mount -o loop ubuntu-18.04.4-server-amd64.iso loopdir  
-  <br>
+ 
 * ##### 7. 创建一个工作目录用于克隆光盘内容
   mkdir cd  
-<br/>
+
 * ##### 8. 同步光盘内容到目标工作目录
   rsync -av loopdir/ cd
   同步过程如下图
   ![15](./image/内容同步.png)
-<br>
+
 * ##### 9.  卸载iso镜像
   umount loopdir
-<br/>
+  
 * ##### 10. 进入目标工作目录 并编辑Ubuntu安装引导界面增加一个新菜单项入口 
   cd cd/   
   vim isolinux/txt.cfg  
   添加如图文件后强制保存
 
 ![16](./image/增加入口.png)
-<br>
+
 
 * ##### 11. 提前阅读并编辑定制Ubuntu官方提供的示例preseed.cfg，并将该文件保存到刚才创建的工作目录  
   ~/cd/preseed/ubuntu-server-autoinstall.seed
   ![17](./image/传送文件.png)
-<br/>
+
 * ##### 12. 重新生成md5sum.txt 封闭改动后的目录到.iso
   <font size=2>
   cd ~/cd && find . -type f -print0 | xargs -0 md5sum > md5sum.txt
