@@ -49,7 +49,8 @@
 * ##### 7. 创建一个工作目录用于克隆光盘内容
   ```mkdir cd ```   
 
-* ##### 8. 同步光盘内容到目标工作目录
+* ##### 8. 同步光盘内容到目标工作目录  
+
   ```rsync -av loopdir/ cd```
   同步过程如下图  
   ![15](./image/内容同步.png)  
@@ -57,18 +58,22 @@
 * ##### 9.  卸载iso镜像
   ```umount loopdir```  
 
-* ##### 10. 进入目标工作目录 并编辑Ubuntu安装引导界面增加一个新菜单项入口 
+* ##### 10. 进入目标工作目录 并编辑Ubuntu安装引导界面增加一个新菜单项入口  
+
   ```cd cd/```   
   ```vim isolinux/txt.cfg``` 
   添加如图文件后强制保存
 
 ![16](./image/增加入口.png)
 
-* ##### 11.修改isolinux/isolinux.cfg，增加内容timeout 10    
+* ##### 11.修改isolinux/isolinux.cfg，增加内容timeout 10  
+
 ![17](./image/添加步骤.png)  
 
 * ##### 11. 提前阅读并编辑定制文件，并将该文件保存到刚才创建的工作目录  
+
   ```pscp D:\VTShare\ubuntu-server-autoinstall.seed root@192.168.254.3:cd/preseed```  
+  
   ![17](./image/传送文件.png)  
 
 * ##### 12.下载genisoimage包
@@ -86,17 +91,18 @@
             -J -l -b isolinux/isolinux.bin \
             -c isolinux/boot.cat -no-emul-boot \
             -boot-load-size 4 -boot-info-table \
-            -o \$IMAGE \$BUILD  
-            ```
+            -o \$IMAGE \$BUILD```
   
   ![18](./image/封闭目录.png)  
 
 * ##### 14. 用pscp下载镜像到主机D盘  
+
   ```pscp root@192.168.254.3:cd/custom.iso D:/```  
-  ![18](./image/镜像下载.png)  
+    
+    ![18](./image/镜像下载.png)  
 
 * ##### 15.无人值守安装过程  
-   视频： b站还在审核中，通过后会在https://space.bilibili.com/384560529账号下。通过后我会把链接传上来。
+   视频： b站还在审核中，通过后会在https://space.bilibili.com/384560529 账号下。通过后我会把链接传上来。
 
 * ##### 问题
     1. 最开始我在root@Ubuntu1/home/ann里创建loopdir和cd文件夹，后来到md5sum封装的步骤时报错/root/cd目录不存在。删掉了之前创建的文件夹回到root@Ubuntu1目录后重新创建文件夹、执行后续步骤后顺利封装。
