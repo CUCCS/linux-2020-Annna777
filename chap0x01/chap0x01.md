@@ -19,8 +19,8 @@
    
 
 * ##### 4. 两块网卡配置成功
-   查看：```ifconfig```
-   ![7](./image/网卡页面.png)
+   查看：```ifconfig```  
+  ![7](./image/网卡页面.png)
 
 ## 实验过程
 * ##### 5. 连接PUTTY与Ubuntu,并配置以ssh实现ubuntu与WINDOWS文件的互传
@@ -51,7 +51,7 @@
 
 * ##### 8. 同步光盘内容到目标工作目录
   ```rsync -av loopdir/ cd```
-  同步过程如下图
+  同步过程如下图  
   ![15](./image/内容同步.png)  
 
 * ##### 9.  卸载iso镜像
@@ -64,16 +64,16 @@
 
 ![16](./image/增加入口.png)
 
-* ##### 11.修改isolinux/isolinux.cfg，增加内容timeout 10  
- ![17](./image/添加步骤.png)  
+* ##### 11.修改isolinux/isolinux.cfg，增加内容timeout 10    
+![17](./image/添加步骤.png)  
 
 * ##### 11. 提前阅读并编辑定制文件，并将该文件保存到刚才创建的工作目录  
-  ```pscp D:\VTShare\ubuntu-server-autoinstall.seed root@192.168.254.3:cd/preseed```
+  ```pscp D:\VTShare\ubuntu-server-autoinstall.seed root@192.168.254.3:cd/preseed```  
   ![17](./image/传送文件.png)  
 
 * ##### 12.下载genisoimage包
   genisoimage包无法下载，我试着用了```apt-get update```和```apt-get upgrade```命令，后来将源换成阿里云的后解决。换源：
-  ```vim /etc/apt/sources.list```  
+  ```vim /etc/apt/sources.list```    
   ![18](./image/换源.png)  
 
 * ##### 13. 重新生成md5sum.txt 封闭改动后的目录到.iso  
@@ -88,12 +88,12 @@
             -boot-load-size 4 -boot-info-table \
             -o \$IMAGE \$BUILD  
             ```
-
-![18](./image/封闭目录.png)  
+  
+  ![18](./image/封闭目录.png)  
 
 * ##### 14. 用pscp下载镜像到主机D盘  
-  ```pscp root@192.168.254.3:cd/custom.iso D:/```
-   ![18](./image/镜像下载.png)  
+  ```pscp root@192.168.254.3:cd/custom.iso D:/```  
+  ![18](./image/镜像下载.png)  
 
 * ##### 15.无人值守安装过程  
    视频： b站还在审核中，通过后会在https://space.bilibili.com/384560529账号下。通过后我会把链接传上来。
