@@ -26,10 +26,12 @@
 * ##### 5. 连接PUTTY与Ubuntu,并配置以ssh实现ubuntu与WINDOWS文件的互传
 
   ![8](./image/配置PUTTY.png)
-   连接PUTTY与Ubuntu
+     
+     连接PUTTY与Ubuntu
 
   ![10](./image/配置SSH.png)
-  打开SSH端口:    
+    
+    打开SSH端口:    
   ```\$sudo ufw default deny```  
   ```\$sudo ufw enable```  
   ```\$sudo ufw allow ssh```
@@ -38,7 +40,8 @@
 
   
   ![12](./image/登录修改.png)
-  用PUTTY登录时密码没错但登不进去，报错Access denied。修改etc/ssh/sshd_config文件以后成功使用pscp上传文件。  
+    
+    用PUTTY登录时密码没错但登不进去，报错Access denied。修改etc/ssh/sshd_config文件以后成功使用pscp上传文件。  
   修改过程：将图上左下角“ ```PermitRootLogin ```"的那行改为“ ```PermitRootLogin yes ```”
   上传：
    ``` pscp D:\VTShare\ubuntu-18.04.4-server-amd64.iso root@192.168.254.3:/ ``` 
@@ -51,7 +54,8 @@
 
 * ##### 8. 同步光盘内容到目标工作目录  
 
-  ```rsync -av loopdir/ cd```
+  ```rsync -av loopdir/ cd```  
+  
   同步过程如下图  
   ![15](./image/内容同步.png)  
 
@@ -61,7 +65,8 @@
 * ##### 10. 进入目标工作目录 并编辑Ubuntu安装引导界面增加一个新菜单项入口  
 
   ```cd cd/```   
-  ```vim isolinux/txt.cfg``` 
+  ```vim isolinux/txt.cfg```  
+  
   添加如图文件后强制保存
 
 ![16](./image/增加入口.png)
@@ -78,7 +83,8 @@
 
 * ##### 12.下载genisoimage包
   genisoimage包无法下载，我试着用了```apt-get update```和```apt-get upgrade```命令，后来将源换成阿里云的后解决。换源：
-  ```vim /etc/apt/sources.list```    
+  ```vim /etc/apt/sources.list```  
+  
   ![18](./image/换源.png)  
 
 * ##### 13. 重新生成md5sum.txt 封闭改动后的目录到.iso  
@@ -93,7 +99,7 @@
             -boot-load-size 4 -boot-info-table \
             -o \$IMAGE \$BUILD```
   
-  ![18](./image/封闭目录.png)  
+ ![18](./image/封闭目录.png)  
 
 * ##### 14. 用pscp下载镜像到主机D盘  
 
