@@ -108,7 +108,7 @@
     ![18](./image/镜像下载.png)  
 
 * ##### 15.无人值守安装过程  
-   视频： b站还在审核中，通过后会在https://space.bilibili.com/384560529 账号下。通过后我会把链接传上来。
+   录屏： https://www.bilibili.com/video/BV1954y1R7mV
 
 * ##### 问题
     1. 最开始我在root@Ubuntu1/home/ann里创建loopdir和cd文件夹，后来到md5sum封装的步骤时报错/root/cd目录不存在。删掉了之前创建的文件夹回到root@Ubuntu1目录后重新创建文件夹、执行后续步骤后顺利封装。
