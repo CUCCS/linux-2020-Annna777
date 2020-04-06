@@ -10,19 +10,19 @@ exit
 ```
 ### 二、vimtutor操作录像
 ##### lesson1：  
-https://asciinema.org/a/66NGsmdMJMc2EGLaHLjf06RPl  
+<script src="https://asciinema.org/a/66NGsmdMJMc2EGLaHLjf06RPl " id="lesson1" async></script> 
 ##### lesson2：  
-https://asciinema.org/a/YyyZB0y9lE7NwAtdTi4HrrOqi  
+<script src="https://asciinema.org/a/YyyZB0y9lE7NwAtdTi4HrrOqi " id="lesson2" async></script>  
 ##### lesson3：  
-https://asciinema.org/a/ySbK1t3r4cT1wp2Myw36BUXmE  
+<script src="https://asciinema.org/a/ySbK1t3r4cT1wp2Myw36BUXmE " id="lesson3" async></script>   
 ##### lesson4：  
-https://asciinema.org/a/p2yVDvbwDKg2zXQPSG8x8gdti  
+<script src="https://asciinema.org/a/p2yVDvbwDKg2zXQPSG8x8gdti " id="lesson4" async></script>   
 ##### lesson5：  
-https://asciinema.org/a/KBe6AVyCcB2crqbZW4tF3ve0g  
+<script src="https://asciinema.org/a/KBe6AVyCcB2crqbZW4tF3ve0g " id="lesson5" async></script>   
 ##### lesson6：  
-https://asciinema.org/a/psg6IXLs2OtMmoabfZgD39bCT  
+<script src="https://asciinema.org/a/psg6IXLs2OtMmoabfZgD39bCT " id="lesson6" async></script>  
 ##### lesson7：  
-https://asciinema.org/a/F8zP7XnYPplGBHQaI7Lr3yfCJ  
+<script src="https://asciinema.org/a/F8zP7XnYPplGBHQaI7Lr3yfCJ " id="lesson7" async></script> 
   
 ### 三、VIMTUTOR完成后的自查清单
 ##### 1. 你了解vim有哪几种工作模式？
