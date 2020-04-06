@@ -10,18 +10,20 @@ exit
 ```
 ### 二、vimtutor操作录像
 ##### lesson1：  
-<script src="https://asciinema.org/a/66NGsmdMJMc2EGLaHLjf06RPl " id="lesson1" async></script> 
+[![asciicast](https://asciinema.org/a/66NGsmdMJMc2EGLaHLjf06RPl.png)](https://asciinema.org/a/66NGsmdMJMc2EGLaHLjf06RPl4)
 ##### lesson2：  
-<script src="https://asciinema.org/a/YyyZB0y9lE7NwAtdTi4HrrOqi " id="lesson2" async></script>  
+[![asciicast](https://asciinema.org/a/YyyZB0y9lE7NwAtdTi4HrrOqi.png)](https://asciinema.org/a/YyyZB0y9lE7NwAtdTi4HrrOqi)  
 ##### lesson3：  
-<script src="https://asciinema.org/a/ySbK1t3r4cT1wp2Myw36BUXmE " id="lesson3" async></script>   
+[![asciicast](https://asciinema.org/a/ySbK1t3r4cT1wp2Myw36BUXmE.png)](https://asciinema.org/a/ySbK1t3r4cT1wp2Myw36BUXmE)  
 ##### lesson4：  
-<script src="https://asciinema.org/a/p2yVDvbwDKg2zXQPSG8x8gdti " id="lesson4" async></script>   
+[![asciicast](https://asciinema.org/a/p2yVDvbwDKg2zXQPSG8x8gdti.png)](https://asciinema.org/a/p2yVDvbwDKg2zXQPSG8x8gdti)
 ##### lesson5：  
-<script src="https://asciinema.org/a/KBe6AVyCcB2crqbZW4tF3ve0g " id="lesson5" async></script>   
+[![asciicast](https://asciinema.org/a/KBe6AVyCcB2crqbZW4tF3ve0g.png)](https://asciinema.org/a/KBe6AVyCcB2crqbZW4tF3ve0g)
 ##### lesson6：  
+[![asciicast](https://asciinema.org/a/66NGsmdMJMc2EGLaHLjf06RPl.png)](https://asciinema.org/a/66NGsmdMJMc2EGLaHLjf06RPl4)
 <script src="https://asciinema.org/a/psg6IXLs2OtMmoabfZgD39bCT " id="lesson6" async></script>  
 ##### lesson7：  
+[![asciicast](https://asciinema.org/a/66NGsmdMJMc2EGLaHLjf06RPl.png)](https://asciinema.org/a/66NGsmdMJMc2EGLaHLjf06RPl4)
 <script src="https://asciinema.org/a/F8zP7XnYPplGBHQaI7Lr3yfCJ " id="lesson7" async></script> 
   
 ### 三、VIMTUTOR完成后的自查清单
