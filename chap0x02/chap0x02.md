@@ -20,11 +20,9 @@ exit
 ##### lesson5：  
 [![asciicast](https://asciinema.org/a/KBe6AVyCcB2crqbZW4tF3ve0g.png)](https://asciinema.org/a/KBe6AVyCcB2crqbZW4tF3ve0g)
 ##### lesson6：  
-[![asciicast](https://asciinema.org/a/66NGsmdMJMc2EGLaHLjf06RPl.png)](https://asciinema.org/a/66NGsmdMJMc2EGLaHLjf06RPl4)
-<script src="https://asciinema.org/a/psg6IXLs2OtMmoabfZgD39bCT " id="lesson6" async></script>  
+[![asciicast](https://asciinema.org/a/psg6IXLs2OtMmoabfZgD39bCT.png)](https://asciinema.org/a/psg6IXLs2OtMmoabfZgD39bCT)
 ##### lesson7：  
-[![asciicast](https://asciinema.org/a/66NGsmdMJMc2EGLaHLjf06RPl.png)](https://asciinema.org/a/66NGsmdMJMc2EGLaHLjf06RPl4)
-<script src="https://asciinema.org/a/F8zP7XnYPplGBHQaI7Lr3yfCJ " id="lesson7" async></script> 
+[![asciicast](https://asciinema.org/a/F8zP7XnYPplGBHQaI7Lr3yfCJ.png)](https://asciinema.org/a/F8zP7XnYPplGBHQaI7Lr3yfCJ)
   
 ### 三、VIMTUTOR完成后的自查清单
 ##### 1. 你了解vim有哪几种工作模式？
