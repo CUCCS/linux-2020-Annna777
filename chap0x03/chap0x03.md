@@ -36,7 +36,7 @@
 * 逻辑卷扩容：```lvextend -L +size /dev/dir```
 * 缩减容量：```lvreduce -L -size /dev/dir```
 ##### 6. 如何通过systemd设置实现在网络连通时运行一个指定脚本，在网络断开时运行另一个脚本？  
-* 修改systemd-networkd.service配置文件中的[Service]区块  
+* 修改```systemd-networkd.service```配置文件中的[Service]区块  
   ```ExecStartPost = 联通时脚本```  
   ExecStopPost = 断开时脚本```
 * 重载修改过的配置文件  
