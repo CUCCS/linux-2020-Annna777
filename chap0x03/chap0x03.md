@@ -37,13 +37,13 @@
 * 缩减容量：```lvreduce -L -size /dev/dir```
 ##### 6. 如何通过systemd设置实现在网络连通时运行一个指定脚本，在网络断开时运行另一个脚本？  
 * 修改systemd-networkd.service配置文件中的[Service]区块  
-  ```ExecStartPost = 联通时脚本  
+  ```ExecStartPost = 联通时脚本```  
   ExecStopPost = 断开时脚本```
 * 重载修改过的配置文件  
   ```sudo systemctl daemon-reload```
 * 重新启动，让修改生效  
-  ```sudo systemctl restart  
-  systemd-networkd.service```
+  ```sudo systemctl restart```  
+  ```systemd-networkd.service```
 
 ##### 7. 如何通过systemd设置实现一个脚本在任何情况下被杀死之后会立即重新启动？实现杀不死？  
 * 修改配置文件  
